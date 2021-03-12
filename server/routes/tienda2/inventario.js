@@ -45,7 +45,7 @@ app.get('/', async(req, res) => {
             res.status(404).send({
                 estatus: '404',
                 err: true,
-                msg: 'No se encontraron inventarios en la base de datos.',
+                msg: 'Inventarios no encontrados en la BD.',
                 cont: {
                     tienda2
                 }
