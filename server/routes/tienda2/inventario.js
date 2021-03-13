@@ -34,7 +34,7 @@ app.get('/', async(req, res) => {
             return res.status(400).send({
                 estatus: '400',
                 err: true,
-                msg: 'Error: No se envio un id valido.',
+                msg: 'Error: ID invalido.',
                 cont: 0
             });
         }
@@ -85,7 +85,7 @@ app.post('/', async(req, res) => {
             return res.status(400).send({
                 estatus: '400',
                 err: true,
-                msg: 'Error: No se envio un id valido.',
+                msg: 'Error: ID invalido.',
                 cont: 0
             });
         }
@@ -97,7 +97,7 @@ app.post('/', async(req, res) => {
             return res.status(400).json({
                 ok: false,
                 resp: 400,
-                msg: 'Error: Error al Insertar el inventario.',
+                msg: 'Error: No se pudieron insertar los inventarios.',
                 cont: {
                     err
                 }
@@ -146,7 +146,7 @@ app.put('/', async(req, res) => {
             return res.status(400).send({
                 estatus: '400',
                 err: true,
-                msg: 'Error: No se envio un id valido.',
+                msg: 'Error: ID invalido.',
                 cont: 0
             });
         }
