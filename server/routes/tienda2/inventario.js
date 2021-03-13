@@ -214,7 +214,7 @@ app.delete('/', async(req, res) => {
             return res.status(400).send({
                 estatus: '400',
                 err: true,
-                msg: 'Error: No se envio un id valido.',
+                msg: 'Error: ID invalido.',
                 cont: 0
             });
         }
